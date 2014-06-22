@@ -5,5 +5,5 @@ package Interface;
  */
 public interface ICalculable
 {
-    public void calculer();
+    public double calculer();
 }

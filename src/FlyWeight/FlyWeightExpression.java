@@ -5,17 +5,20 @@ import Interface.IExpression;
 /**
  * Created by kimsavinfo on 22/06/14.
  */
-public class FlyWeightExpression implements IExpression
+public abstract class FlyWeightExpression implements IExpression
 {
-
     @Override
-    public void calculer() {
-
-    }
-
-    @Override
-    public String evaluer()
+    public double calculer()
     {
-        return "evaluer";
+        return 0.0;
     }
+
+    @Override
+    public void evaluer()
+    {
+
+    }
+
+    @Override
+    public abstract String toString();
 }

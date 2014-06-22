@@ -3,6 +3,7 @@ package FlyWeight;
 /**
  * Created by kimsavinfo on 22/06/14.
  */
-public class OpFeuille extends ConcreteFlyWeightExpression
+public abstract class OpFeuille extends ConcreteFlyWeightExpression
 {
+    protected double valeur;
 }
