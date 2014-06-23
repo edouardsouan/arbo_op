@@ -18,7 +18,7 @@ public class FlyWeightFactory
         variablesGenerees = new HashMap<String, OpVariable>();
     }
 
-    // String pour l'opérateur car anticipe "sqrt" pour racine carrée par eemple
+    // String pour l'opérateur car anticipe "sqrt" pour racine carrée par exemple
     public OpComposite construire(String p_operateur, FlyWeightExpression expGauche, FlyWeightExpression expDroit)
     {
         OpComposite opComposite = null;
@@ -38,7 +38,7 @@ public class FlyWeightFactory
             break;
 
             case "/" :
-                opComposite = construireOpMultiplication(expGauche, expDroit);
+                opComposite = construireOpDivision(expGauche, expDroit);
             break;
         }
 
