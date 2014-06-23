@@ -1,5 +1,7 @@
 package FlyWeight;
 
+import java.util.Scanner;
+
 /**
  * Created by kimsavinfo on 22/06/14.
  */
@@ -10,7 +12,7 @@ public class OpVariable extends OpFeuille
     public OpVariable()
     {
         variable = "x";
-        valeur = 0;
+        valeur = 0.0;
     }
 
     public OpVariable(String p_variable)
@@ -18,9 +20,13 @@ public class OpVariable extends OpFeuille
         variable = p_variable;
     }
 
-    public void evaluer(double p_valeur)
-    {
-        valeur = p_valeur;
+
+    public String evaluer(){
+        Scanner lectureClavier = new Scanner(System.in);
+        System.out.print("Saisissez la valeur de x :  ");
+        String valeurSaisie = lectureClavier.nextLine();
+        this.valeur = Double.valueOf(valeurSaisie);
+        return valeurSaisie;
     }
 
     public double calculer()

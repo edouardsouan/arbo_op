@@ -5,5 +5,5 @@ package Interface;
  */
 public interface IEvalutation
 {
-    public void evaluer();
+    public String evaluer();
 }

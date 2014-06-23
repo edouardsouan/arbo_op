@@ -7,7 +7,7 @@ public class OpNombre extends OpFeuille
 {
     public OpNombre()
     {
-        valeur = 0;
+        valeur = 0.0;
     }
 
     public OpNombre(double p_valeur)
@@ -15,11 +15,7 @@ public class OpNombre extends OpFeuille
         valeur = p_valeur;
     }
 
-    // Non sûre, à revoir
-    public void evaluer(double p_valeur)
-    {
-        System.out.println("Valeur : "+valeur);
-    }
+    public String evaluer(){ return Double.toString(valeur); }
 
     public double calculer()
     {

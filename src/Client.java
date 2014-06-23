@@ -17,7 +17,8 @@ public class Client
         FlyWeightExpression e3 = factory.construire("/", factory.construire(1.0), e2);
         FlyWeightExpression e = factory.construire("*", e1, e3);
 
-        e.toString();
-        //e.evaluer(1.0);
+        String equation = e.toString();
+        System.out.print(equation);
+        System.out.println(e.evaluer());
     }
 }

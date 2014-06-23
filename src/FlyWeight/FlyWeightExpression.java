@@ -14,9 +14,9 @@ public abstract class FlyWeightExpression implements IExpression
     }
 
     @Override
-    public void evaluer()
+    public String evaluer()
     {
-
+        return "vide";
     }
 
     @Override

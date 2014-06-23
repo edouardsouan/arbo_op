@@ -22,4 +22,10 @@ public class OpComposite extends UnsharedFlyWeightExpression
     public String toString() {
         return "( " + expressionLeft.toString() + " " + signe + " " + expressionRight.toString() + " )";
     }
+
+    @Override
+    public String evaluer() {
+        return "( " + expressionLeft.evaluer() + " " + signe + " " + expressionRight.evaluer() + " )";
+    }
+
 }
