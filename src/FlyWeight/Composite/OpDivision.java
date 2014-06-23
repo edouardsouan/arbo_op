@@ -15,24 +15,23 @@ public class OpDivision extends OpComposite
 
     public String evaluer()
     {
-      return super.toString();
+        return super.evaluer();
     }
 
     public Double calculer()
     {
         // Attention à la division par zéro
-        try {
-            double diviseur = expressionRight.calculer();
+         double diviseur;
 
-            if (diviseur != 0)
-            {
-                return expressionLeft.calculer() / diviseur;
-            }
-        }catch (Exception e)
+        do
         {
-            e.printStackTrace();
-        }
+            expressionRight.evaluer();
+            diviseur = expressionRight.calculer();
 
-        return 0.0;
+            System.out.println("Diviseur : "+diviseur);
+
+        }while (diviseur == 0.0);
+
+        return expressionLeft.calculer() / diviseur;
     }
 }

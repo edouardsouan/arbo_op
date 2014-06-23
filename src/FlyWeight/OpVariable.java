@@ -31,6 +31,8 @@ public class OpVariable extends OpFeuille
 
     public Double calculer()
     {
+        evaluer();
+
         return valeur;
     }
 

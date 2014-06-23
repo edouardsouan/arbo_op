@@ -19,6 +19,6 @@ public class Client
 
         String equation = e.toString();
         System.out.print(equation);
-        System.out.println(e.evaluer());
+        System.out.println(e.calculer().toString());
     }
 }
