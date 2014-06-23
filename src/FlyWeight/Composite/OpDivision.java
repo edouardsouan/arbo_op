@@ -13,9 +13,9 @@ public class OpDivision extends OpComposite
         signe = "/";
     }
 
-    public void evaluer(double p_valeur)
+    public String evaluer()
     {
-        System.out.println("Valeur : " + super.toString() );
+      return super.toString();
     }
 
     public Double calculer()

@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9deabd80-3203-453a-bbb0-944ac63f8aa0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlyWeight/FlyWeightExpression.java" afterPath="$PROJECT_DIR$/src/FlyWeight/FlyWeightExpression.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Interface/ICalculable.java" afterPath="$PROJECT_DIR$/src/Interface/ICalculable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlyWeight/Composite/OpAddition.java" afterPath="$PROJECT_DIR$/src/FlyWeight/Composite/OpAddition.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlyWeight/Composite/OpDivision.java" afterPath="$PROJECT_DIR$/src/FlyWeight/Composite/OpDivision.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlyWeight/Composite/OpMultiplication.java" afterPath="$PROJECT_DIR$/src/FlyWeight/Composite/OpMultiplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlyWeight/OpNombre.java" afterPath="$PROJECT_DIR$/src/FlyWeight/OpNombre.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlyWeight/Composite/OpSoustraction.java" afterPath="$PROJECT_DIR$/src/FlyWeight/Composite/OpSoustraction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlyWeight/OpVariable.java" afterPath="$PROJECT_DIR$/src/FlyWeight/OpVariable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="arbo_op.iws" />
@@ -83,32 +76,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OpDivision.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="OpDivision.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FlyWeight/Composite/OpDivision.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="738">
-              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlyWeightExpression.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/FlyWeight/FlyWeightExpression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38379532" vertical-offset="0" max-vertical-offset="469">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcreteFlyWeightExpression.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FlyWeight/ConcreteFlyWeightExpression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.69083154" vertical-offset="0" max-vertical-offset="792">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="e#375#376#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,8 +92,8 @@
       <file leaf-file-name="OpComposite.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FlyWeight/Composite/OpComposite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
-              <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="648">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -206,9 +182,9 @@
         <option value="$PROJECT_DIR$/src/FlyWeight/OpVariable.java" />
         <option value="$PROJECT_DIR$/src/Client.java" />
         <option value="$PROJECT_DIR$/src/FlyWeight/OpNombre.java" />
-        <option value="$PROJECT_DIR$/src/FlyWeight/Composite/OpDivision.java" />
         <option value="$PROJECT_DIR$/src/FlyWeight/Composite/OpComposite.java" />
         <option value="$PROJECT_DIR$/src/FlyWeight/FlyWeightExpression.java" />
+        <option value="$PROJECT_DIR$/src/FlyWeight/Composite/OpDivision.java" />
       </list>
     </option>
   </component>
@@ -778,7 +754,7 @@
       <workItem from="1403535034240" duration="2940000" />
       <workItem from="1403541922240" duration="26000" />
       <workItem from="1403553927914" duration="507000" />
-      <workItem from="1403554471335" duration="4866000" />
+      <workItem from="1403554471335" duration="5253000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1403472380371</created>
@@ -804,11 +780,15 @@
       <created>1403558071553</created>
       <updated>1403558071553</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update project">
+      <created>1403559345074</created>
+      <updated>1403559345074</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23572000" />
+    <option name="totallyTimeSpent" value="23959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="-4" width="1555" height="905" extended-state="6" />
@@ -894,7 +874,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="810">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1203,22 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlyWeight/Composite/OpDivision.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="738">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlyWeight/Composite/OpComposite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
-          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/ICalculable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26865673" vertical-offset="0" max-vertical-offset="469">
@@ -1232,6 +1199,25 @@
         <state vertical-scroll-proportion="0.38379532" vertical-offset="0" max-vertical-offset="469">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlyWeight/Composite/OpComposite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="648">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlyWeight/Composite/OpDivision.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69083154" vertical-offset="0" max-vertical-offset="792">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
