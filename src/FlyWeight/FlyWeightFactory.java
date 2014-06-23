@@ -1,8 +1,6 @@
 package FlyWeight;
 
-import FlyWeight.Composite.OpAddition;
-import FlyWeight.Composite.OpComposite;
-import Library.Operateurs;
+import FlyWeight.Composite.*;
 
 import java.util.HashMap;
 
@@ -12,23 +10,39 @@ import java.util.HashMap;
 public class FlyWeightFactory
 {
     HashMap<Double, OpNombre> nombresGeneres;
-    HashMap<String, OpComposite> operateursGeneres;
-    Operateurs operateursAcceptes;
-    // Sujet ne demande qu'une varaible "x" mais on anticipe l'évolution
-    // d'une équation à 2 inconnues par exemple
     HashMap<String, OpVariable> variablesGenerees;
 
     public FlyWeightFactory()
     {
         nombresGeneres = new HashMap<Double, OpNombre>();
-        operateursGeneres = new HashMap<String, OpComposite>();
-        operateursAcceptes = new Operateurs();
         variablesGenerees = new HashMap<String, OpVariable>();
     }
 
-    public void construire(signe, expA, expB)
+    // String pour l'opérateur car anticipe "sqrt" pour racine carrée par eemple
+    public OpComposite construire(String p_operateur, FlyWeightExpression expGauche, FlyWeightExpression expDroit)
     {
+        OpComposite opComposite = null;
 
+        switch (p_operateur)
+        {
+            case "+" :
+                opComposite = construireOpAddition(expGauche, expDroit);
+            break;
+
+            case "-" :
+                opComposite = construireOpSoustraction(expGauche, expDroit);
+            break;
+
+            case "*" :
+                opComposite = construireOpMultiplication(expGauche, expDroit);
+            break;
+
+            case "/" :
+                opComposite = construireOpMultiplication(expGauche, expDroit);
+            break;
+        }
+
+        return opComposite;
     }
 
     public OpNombre construire(Double p_nombre)
@@ -49,7 +63,7 @@ public class FlyWeightFactory
     }
 
 
-    public OpVariable construire(String p_expression)
+    public OpVariable construire(String p_variable)
     {
         OpVariable opVariable = null;
 
@@ -66,33 +80,24 @@ public class FlyWeightFactory
         return opVariable;
     }
 
-    private OpComposite construire(String p_expression)
+    private OpAddition construireOpAddition(FlyWeightExpression p_expressionLeft, FlyWeightExpression p_expressionRight)
     {
-        OpComposite opComposite = null;
-
-        if(!operateursGeneres.containsKey(p_expression))
-        {
-            opComposite = new OpComposite(p_expression);
-            nombresGeneres.put(p_nombre, opNombre);
-        }
-        else
-        {
-            opNombre = nombresGeneres.get(p_nombre);
-        }
-
-        switch (p_expression)
-        {
-            case "+":
-
-            break;
-        }
+        return new OpAddition(p_expressionLeft, p_expressionRight);
     }
 
-    private OpAddition construireOpAddition()
+    private OpSoustraction construireOpSoustraction(FlyWeightExpression p_expressionLeft, FlyWeightExpression p_expressionRight)
     {
-
+        return new OpSoustraction(p_expressionLeft, p_expressionRight);
     }
 
+    private OpMultiplication construireOpMultiplication(FlyWeightExpression p_expressionLeft, FlyWeightExpression p_expressionRight)
+    {
+        return new OpMultiplication(p_expressionLeft, p_expressionRight);
+    }
 
+    private OpDivision construireOpDivision(FlyWeightExpression p_expressionLeft, FlyWeightExpression p_expressionRight)
+    {
+        return new OpDivision(p_expressionLeft, p_expressionRight);
+    }
 
 }
