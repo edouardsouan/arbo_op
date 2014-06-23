@@ -8,7 +8,7 @@ import Interface.IExpression;
 public abstract class FlyWeightExpression implements IExpression
 {
     @Override
-    public double calculer()
+    public Double calculer()
     {
         return 0.0;
     }

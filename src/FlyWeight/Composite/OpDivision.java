@@ -18,7 +18,7 @@ public class OpDivision extends OpComposite
         System.out.println("Valeur : " + super.toString() );
     }
 
-    public double calculer()
+    public Double calculer()
     {
         // Attention à la division par zéro
         try {

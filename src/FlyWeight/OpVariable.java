@@ -29,7 +29,7 @@ public class OpVariable extends OpFeuille
         return valeurSaisie;
     }
 
-    public double calculer()
+    public Double calculer()
     {
         return valeur;
     }

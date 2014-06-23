@@ -17,7 +17,7 @@ public class OpNombre extends OpFeuille
 
     public String evaluer(){ return Double.toString(valeur); }
 
-    public double calculer()
+    public Double calculer()
     {
         return valeur;
     }

@@ -19,7 +19,7 @@ public class OpAddition extends OpComposite
         System.out.println("Valeur : " + super.toString() );
     }
 
-    public double calculer()
+    public Double calculer()
     {
         return expressionLeft.calculer() + expressionRight.calculer();
     }
