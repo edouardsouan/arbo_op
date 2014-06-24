@@ -5,21 +5,27 @@ package FlyWeight;
  */
 public class OpNombre extends OpFeuille
 {
-    public OpNombre()
-    {
-        valeur = 0.0;
-    }
-
     public OpNombre(double p_valeur)
     {
         valeur = p_valeur;
     }
 
-    public String evaluer(){ return Double.toString(valeur); }
+    @Override
+    public boolean isCalculable()
+    {
+        return true;
+    }
 
+    @Override
     public Double calculer()
     {
         return valeur;
+    }
+
+    @Override
+    public void evaluer(String p_variable, double p_nombre)
+    {
+        // Ne rien faire
     }
 
     @Override

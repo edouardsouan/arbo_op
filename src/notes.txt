@@ -1,7 +1,0 @@
-TODO :
-- vérifier la déclaration de l'héritage des interfaces : est-ce bien extends comme toute classe où y a t il une nuance ?
-    Doute car n'Override pas Calculer et Evaluer
-- vérifier déclaration Factory
-- Vérifier mot clé abstract
-- classes de test pour toutes les opérations et pour la division par 0
-- dans la factory, doit on renvoyer l'élément général ou doit on spécifier l'entité la plus spécialisée ? (FWExp ou OpVar)

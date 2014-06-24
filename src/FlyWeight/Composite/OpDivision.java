@@ -13,25 +13,35 @@ public class OpDivision extends OpComposite
         signe = "/";
     }
 
-    public String evaluer()
+    @Override
+    public boolean isCalculable()
     {
-        return super.evaluer();
+        boolean divisionPossible;
+
+        // <!> Attention à la divions par zéro <!>
+        if(expressionRight.calculer() == 0.0)
+        {
+            System.out.println("Division par zéro, veuillez redéfinir votre équation ou révaluer vos variables svp");
+            divisionPossible = false;
+        }
+        else
+        {
+            divisionPossible = true;
+        }
+
+        return divisionPossible && expressionLeft.isCalculable() && expressionRight.isCalculable();
     }
 
+    @Override
     public Double calculer()
     {
-        // Attention à la division par zéro
-         double diviseur;
-
-        do
+        if( isCalculable() )
         {
-            expressionRight.evaluer();
-            diviseur = expressionRight.calculer();
-
-            System.out.println("Diviseur : "+diviseur);
-
-        }while (diviseur == 0.0);
-
-        return expressionLeft.calculer() / diviseur;
+            return expressionLeft.calculer() / expressionRight.calculer();
+        }
+        else
+        {
+            return null;
+        }
     }
 }

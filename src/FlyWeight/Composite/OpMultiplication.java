@@ -13,14 +13,16 @@ public class OpMultiplication extends OpComposite
         signe = "*";
     }
 
-    // Non sûre, à revoir
-    public void evaluer(double p_valeur)
-    {
-        System.out.println("Valeur : " + super.toString() );
-    }
-
+    @Override
     public Double calculer()
     {
-        return expressionLeft.calculer() * expressionRight.calculer();
+        if( isCalculable() )
+        {
+            return expressionLeft.calculer() * expressionRight.calculer();
+        }
+        else
+        {
+            return null;
+        }
     }
 }

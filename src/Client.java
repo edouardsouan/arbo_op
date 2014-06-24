@@ -19,6 +19,11 @@ public class Client
 
         String equation = e.toString();
         System.out.print(equation);
-        System.out.println(e.calculer().toString());
+        System.out.println(); // soucis de présentation
+
+        // Demander d'évaluer les variables
+        ///System.out.println(e.calculer().toString());
+
+        System.out.println(e1.calculer().toString());
     }
 }

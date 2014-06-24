@@ -6,4 +6,5 @@ package Interface;
 public interface ICalculable
 {
     public Double calculer();
+    public boolean isCalculable();
 }

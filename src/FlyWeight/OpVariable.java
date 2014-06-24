@@ -1,7 +1,5 @@
 package FlyWeight;
 
-import java.util.Scanner;
-
 /**
  * Created by kimsavinfo on 22/06/14.
  */
@@ -9,36 +7,50 @@ public class OpVariable extends OpFeuille
 {
     private String variable;
 
-    public OpVariable()
-    {
-        variable = "x";
-        valeur = 0.0;
-    }
-
     public OpVariable(String p_variable)
     {
         variable = p_variable;
+        valeur = Double.NaN;
     }
 
-
-    public String evaluer(){
-        Scanner lectureClavier = new Scanner(System.in);
-        System.out.print("Saisissez la valeur de x :  ");
-        String valeurSaisie = lectureClavier.nextLine();
-        this.valeur = Double.valueOf(valeurSaisie);
-        return valeurSaisie;
-    }
-
+    @Override
     public Double calculer()
     {
-        evaluer();
+        if(isCalculable())
+        {
+            return valeur;
+        }
+        else {
+            return null;
+        }
+    }
 
-        return valeur;
+    @Override
+    public boolean isCalculable()
+    {
+        if(Double.isNaN(valeur))
+        {
+            System.out.println("Veuillez évaluer la variable "+variable+" svp : evaluer(\""+variable+"\", [nombre]) ");
+            return false;
+        }
+        else
+        {
+            System.out.println( Double.toString(valeur) );
+            return true;
+        }
+    }
+
+    @Override
+    public void evaluer(String p_variable, double p_nombre)
+    {
+        if(variable.equals(p_variable))
+        {
+            valeur = p_nombre;
+        }
     }
 
     @Override
     public String toString() {
         return variable;
     }
-
 }

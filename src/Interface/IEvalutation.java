@@ -5,5 +5,5 @@ package Interface;
  */
 public interface IEvalutation
 {
-    public String evaluer();
+    public void evaluer(String p_variable, double p_nombre);
 }
