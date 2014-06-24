@@ -2,8 +2,10 @@ package FlyWeight.Composite;
 
 import FlyWeight.FlyWeightExpression;
 
+
 /**
- * Created by edouard on 22/06/14.
+ * Autheur : kimsavinfo
+ * Date : 42:01 25 juin 2014
  */
 public class OpMultiplication extends OpComposite
 {

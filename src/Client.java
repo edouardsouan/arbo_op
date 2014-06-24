@@ -2,10 +2,13 @@ import FlyWeight.FlyWeightExpression;
 import FlyWeight.FlyWeightFactory;
 
 /**
- * Created by kimsavinfo on 22/06/14.
+ * Autheur : kimsavinfo
+ * Date : 42:01 25 juin 2014
  */
 public class Client
 {
+    private static Double valeurX = 3.0;
+
     public static void main (String[] args)
     {
         System.out.println("==== DESIGN PATTERN ====");
@@ -21,9 +24,8 @@ public class Client
         System.out.print(equation);
         System.out.println(); // soucis de présentation
 
-        // Demander d'évaluer les variables
-        ///System.out.println(e.calculer().toString());
+        e.evaluer("x", valeurX);
 
-        System.out.println(e1.calculer().toString());
+        System.out.println(e.calculer().toString());
     }
 }

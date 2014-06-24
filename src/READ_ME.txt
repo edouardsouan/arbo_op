@@ -1,5 +1,5 @@
 Justifications :
-- peut avoir plusieurs variables/inconnues différentes (x, y ...)
+- peut avoir plusieurs variables/inconnues différentes (x, y ...) => evaluer() modifié
 - signe pourrait être sqrt pour racine carré d'où le signe en String et non en Char
 
 

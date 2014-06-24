@@ -4,18 +4,20 @@ import FlyWeight.Composite.*;
 
 import java.util.HashMap;
 
+
 /**
- * Created by kimsavinfo on 22/06/14.
+ * Autheur : kimsavinfo
+ * Date : 42:01 25 juin 2014
  */
 public class FlyWeightFactory
 {
-    HashMap<Double, OpNombre> nombresGeneres;
-    HashMap<String, OpVariable> variablesGenerees;
+    private HashMap<Double, OpNombre> nombresGeneres;
+    private HashMap<String, OpVariable> variablesGenerees;
 
     public FlyWeightFactory()
     {
-        nombresGeneres = new HashMap<Double, OpNombre>();
-        variablesGenerees = new HashMap<String, OpVariable>();
+        nombresGeneres = new HashMap<>();
+        variablesGenerees = new HashMap<>();
     }
 
     // String pour l'opérateur car anticipe "sqrt" pour racine carrée par exemple
@@ -47,7 +49,7 @@ public class FlyWeightFactory
 
     public OpNombre construire(Double p_nombre)
     {
-        OpNombre opNombre = null;
+        OpNombre opNombre;
 
         if(!nombresGeneres.containsKey(p_nombre))
         {
@@ -65,7 +67,7 @@ public class FlyWeightFactory
 
     public OpVariable construire(String p_variable)
     {
-        OpVariable opVariable = null;
+        OpVariable opVariable;
 
         if(!variablesGenerees.containsKey(p_variable))
         {

@@ -1,7 +1,9 @@
 package FlyWeight;
 
+
 /**
- * Created by kimsavinfo on 22/06/14.
+ * Autheur : kimsavinfo
+ * Date : 42:01 25 juin 2014
  */
 public class OpVariable extends OpFeuille
 {
@@ -35,7 +37,6 @@ public class OpVariable extends OpFeuille
         }
         else
         {
-            System.out.println( Double.toString(valeur) );
             return true;
         }
     }

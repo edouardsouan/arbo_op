@@ -2,8 +2,10 @@ package FlyWeight;
 
 import Interface.IExpression;
 
+
 /**
- * Created by kimsavinfo on 22/06/14.
+ * Autheur : kimsavinfo
+ * Date : 42:01 25 juin 2014
  */
 public abstract class FlyWeightExpression implements IExpression
 {
