@@ -16,7 +16,7 @@ Pourquoi rajouter la fonction isCalculable() ?
 - Le fait de juste utiliser les fonctions calculer() ou évaluler() me paraissait trop permissif.
 Donc j'ai cherché à avoir plus de sécurité grâce à isCalculabl()e dans l'interface ICalculable
 pour gérer la demande d'évaluation des variables.
-La fonction vérifie si la varibale n'est pas évaluée ou si on a une division par 0 est présente dans l'expression.
-Je souhaite alors obligear l'utilisateur à évaluer correctement les vaiables.
+La fonction vérifie si la variable n'est pas évaluée ou si on a une division par 0 est présente dans l'expression.
+Je souhaite alors obliger l'utilisateur à évaluer correctement les vaiables.
 
 
