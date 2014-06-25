@@ -1,13 +1,22 @@
-Justifications :
-- peut avoir plusieurs variables/inconnues différentes (x, y ...) => evaluer() modifié
-- signe pourrait être sqrt pour racine carré d'où le signe en String et non en Char
+Fichier justifiant mes choix
+____________________________
 
 
-Juste calculer() ou évaluler() me paraissait trop permissif.
-Donc assure plus de sécurité en obligeant à évaluer puis à calculer.
 
-Pour éviter d'évaluer plusieurs fois la même var, évaluer() prend en paramètre
-la variable String que l'on veut remplacer et la valeur numérique
+Pourquoi evaluer() est-il avec 2 paramètres (String ,double) ?
+- Je suis partie du principe qu'on pouvait choisir plusieurs variables/inconnues différentes (x, y ...)
+ Donc evaluer() doit pouvoir indiquer pour quel nombre la variable est évaluée, et ce uniquement pour la
+ variable choisie.
 
-Rajout de isCalculable dans l'interface ICalculable pour gérer la demande d'évaluation des varibles
-si ce n'est pas fait ou si on a une division par 0
+ Pour les classes Composite (opérateurs numériques), pourquoi avoir choisi le type String
+ pour le signe et pas Char ?
+ - J'ai supposé que si le programme évolué, on pouvait indiquer "sqrt" pour la racine carré par exemple.
+
+Pourquoi rajouter la fonction isCalculable() ?
+- Le fait de juste utiliser les fonctions calculer() ou évaluler() me paraissait trop permissif.
+Donc j'ai cherché à avoir plus de sécurité grâce à isCalculabl()e dans l'interface ICalculable
+pour gérer la demande d'évaluation des variables.
+La fonction vérifie si la varibale n'est pas évaluée ou si on a une division par 0 est présente dans l'expression.
+Je souhaite alors obligear l'utilisateur à évaluer correctement les vaiables.
+
+
