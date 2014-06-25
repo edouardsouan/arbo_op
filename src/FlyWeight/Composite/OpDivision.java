@@ -14,7 +14,6 @@ public class OpDivision extends OpComposite
         signe = "/";
     }
 
-    @Override
     public boolean isCalculable()
     {
         boolean divisionPossible;
@@ -33,7 +32,6 @@ public class OpDivision extends OpComposite
         return divisionPossible && expressionLeft.isCalculable() && expressionRight.isCalculable();
     }
 
-    @Override
     public Double calculer()
     {
         if( isCalculable() )

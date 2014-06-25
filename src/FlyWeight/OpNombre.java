@@ -29,7 +29,6 @@ public class OpNombre extends OpFeuille
         // Ne rien faire
     }
 
-    @Override
     public String toString() {
         return Double.toString(valeur);
     }

@@ -14,7 +14,6 @@ public class OpAddition extends OpComposite
         signe = "+";
     }
 
-    @Override
     public Double calculer()
     {
         if( isCalculable() )

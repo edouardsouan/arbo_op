@@ -15,7 +15,6 @@ public class OpMultiplication extends OpComposite
         signe = "*";
     }
 
-    @Override
     public Double calculer()
     {
         if( isCalculable() )

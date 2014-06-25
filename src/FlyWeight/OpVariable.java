@@ -49,8 +49,6 @@ public class OpVariable extends OpFeuille
             valeur = p_nombre;
         }
     }
-
-    @Override
     public String toString() {
         return variable;
     }
